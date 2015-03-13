@@ -1,6 +1,8 @@
 *.log
 *.pyc
 
+**/Config/resources/config.ini
+
 /tmp
 /.idea
 /vendor
