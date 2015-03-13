@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4812dfb6b1cb881df8b8cae2ae89e6ed",
+    "hash": "0e5ec07d13a013c17a9ad8e3ab7c4f2c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -483,48 +483,6 @@
             "time": "2014-09-09 13:34:57"
         },
         {
-            "name": "google/apiclient",
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "9c35bbbbaf04a5236d763560dab1e2f6e672a724"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9c35bbbbaf04a5236d763560dab1e2f6e672a724",
-                "reference": "9c35bbbbaf04a5236d763560dab1e2f6e672a724",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Client library for Google APIs",
-            "homepage": "http://developers.google.com/api-client-library/php",
-            "keywords": [
-                "google"
-            ],
-            "time": "2014-11-25 14:35:03"
-        },
-        {
             "name": "mandrill/mandrill",
             "version": "1.0.54",
             "source": {
@@ -569,16 +527,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.12.0",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1fbe8c2641f2b163addf49cc5e18f144bec6b19f"
+                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1fbe8c2641f2b163addf49cc5e18f144bec6b19f",
-                "reference": "1fbe8c2641f2b163addf49cc5e18f144bec6b19f",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
+                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
                 "shasum": ""
             },
             "require": {
@@ -595,6 +553,7 @@
                 "phpunit/phpunit": "~4.0",
                 "raven/raven": "~0.5",
                 "ruflin/elastica": "0.90.*",
+                "swiftmailer/swiftmailer": "~5.3",
                 "videlalvaro/php-amqplib": "~2.4"
             },
             "suggest": {
@@ -611,7 +570,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12.x-dev"
+                    "dev-master": "1.13.x-dev"
                 }
             },
             "autoload": {
@@ -637,64 +596,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-12-29 21:29:35"
-        },
-        {
-            "name": "phpoffice/phpexcel",
-            "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "e69a5e4d0ffa7fb6f171859e0a04346e580df30b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/e69a5e4d0ffa7fb6f171859e0a04346e580df30b",
-                "reference": "e69a5e4d0ffa7fb6f171859e0a04346e580df30b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-xml": "*",
-                "ext-xmlwriter": "*",
-                "php": ">=5.2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PHPExcel": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Maarten Balliauw",
-                    "homepage": "http://blog.maartenballiauw.be"
-                },
-                {
-                    "name": "Mark Baker"
-                },
-                {
-                    "name": "Franck Lefevre",
-                    "homepage": "http://blog.rootslabs.net"
-                },
-                {
-                    "name": "Erik Tilt"
-                }
-            ],
-            "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-            "homepage": "http://phpexcel.codeplex.com",
-            "keywords": [
-                "OpenXML",
-                "excel",
-                "php",
-                "spreadsheet",
-                "xls",
-                "xlsx"
-            ],
-            "time": "2014-03-02 15:22:49"
+            "time": "2015-03-09 09:58:04"
         },
         {
             "name": "pimple/pimple",
@@ -920,6 +822,64 @@
                 "microframework"
             ],
             "time": "2015-01-20 16:45:58"
+        },
+        {
+            "name": "sqmk/phue",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sqmk/Phue.git",
+                "reference": "7dfdb7a0298d6eb768fc820f6c9c289fd65c78af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sqmk/Phue/zipball/7dfdb7a0298d6eb768fc820f6c9c289fd65c78af",
+                "reference": "7dfdb7a0298d6eb768fc820f6c9c289fd65c78af",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.8.0",
+                "phpunit/phpunit": "3.7.25",
+                "squizlabs/php_codesniffer": "1.4.6"
+            },
+            "suggest": {
+                "ext-curl": "Allows usage of cURL transport adapter"
+            },
+            "bin": [
+                "bin/phue-create-user",
+                "bin/phue-bridge-finder",
+                "bin/phue-light-finder",
+                "bin/phue-list-lights"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Phue": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Squires",
+                    "email": "sqmk@php.net",
+                    "role": "lead"
+                }
+            ],
+            "description": "Phue - Philips Hue PHP client",
+            "homepage": "http://github.com/sqmk/Phue",
+            "keywords": [
+                "client",
+                "hue",
+                "philips",
+                "phue"
+            ],
+            "time": "2015-01-04 02:10:45"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1584,16 +1544,16 @@
         },
         {
             "name": "pdepend/pdepend",
-            "version": "2.0.4",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pdepend/pdepend.git",
-                "reference": "1b0acf162da4f30237987e61e177a57f78e3d87e"
+                "reference": "a15ffcbfbcc4570d4a733ca7b76e9cac0a56c3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/1b0acf162da4f30237987e61e177a57f78e3d87e",
-                "reference": "1b0acf162da4f30237987e61e177a57f78e3d87e",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/a15ffcbfbcc4570d4a733ca7b76e9cac0a56c3f4",
+                "reference": "a15ffcbfbcc4570d4a733ca7b76e9cac0a56c3f4",
                 "shasum": ""
             },
             "require": {
@@ -1619,7 +1579,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Official version of pdepend to be handled with Composer",
-            "time": "2014-12-04 12:38:39"
+            "time": "2015-03-02 08:06:43"
         },
         {
             "name": "phpmd/phpmd",

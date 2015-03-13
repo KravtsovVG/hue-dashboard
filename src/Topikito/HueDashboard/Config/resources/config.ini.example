@@ -10,7 +10,7 @@ app.debug.mode = true;
 app.cache.enabled = false;
 
 app.default_protocol = 'http://'
-app.hostname = 'acme.loc'
+app.hostname = 'hue-dashboard.loc'
 
 monolog.enabled = true
 monolog.level = DEBUG

@@ -19,8 +19,7 @@
     "tedivm/jshrink": "*",
     "symfony/security": "*",
     "symfony/translation": "*",
-    "google/apiclient": "1.1.2",
-    "phpoffice/phpexcel": "1.8.0"
+    "sqmk/phue" : "*"
   },
   "require-dev": {
     "phpmd/phpmd" : "2.0.*",

@@ -7,11 +7,11 @@ use Topikito\HueDashboard\Config\Base\HTMLController;
 use Silex\Application;
 
 /**
- * Class Home
+ * Class Users
  *
  * @package Topikito\HueDashboard\Controller
  */
-class Home extends HTMLController
+class Users extends HTMLController
 {
 
     /**
@@ -19,7 +19,7 @@ class Home extends HTMLController
      */
     public function index()
     {
-        return $this->view->render('Home/index.html.twig');
+        return $this->view->render('Users/index.html.twig');
     }
 
 }
