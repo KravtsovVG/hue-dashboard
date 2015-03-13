@@ -1,0 +1,8 @@
+*.log
+*.pyc
+
+/tmp
+/.idea
+/vendor
+/public/webgrind
+/public/opcache

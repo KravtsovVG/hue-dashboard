@@ -1,0 +1,35 @@
+<phpunit colors="true"
+         processUncoveredFilesFromWhitelist="true"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+		>
+    <php>
+        <env name="APPLICATION_ENV" value="local-roberto" />
+    </php>
+
+    <testsuites>
+        <testsuite name="YourApp Test Suite">
+            <directory>./tests/unit/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <directory>vendor</directory>
+                <directory>src/libs/s3</directory>
+                <directory>src/libs/facebook</directory>
+                <directory>src/libs/elastica</directory>
+                <directory>src/libs/mailchimp</directory>
+                <directory>src/libs/twitteroauth</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

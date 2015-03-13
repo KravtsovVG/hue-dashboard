@@ -1,0 +1,23 @@
+#!/bin/bash
+
+EXIT_CODE=0
+
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Config --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Controller --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Exception --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Helper --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Provider --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Sal --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+php app/bin/resources/php-cs-fixer.phar fix ./src/Topikito/HueDashboard/Plugin --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+
+php app/bin/resources/php-cs-fixer.phar fix ./app --level=psr2
+EXIT_CODE=$((EXIT_CODE || $?))
+
+exit $EXIT_CODE
