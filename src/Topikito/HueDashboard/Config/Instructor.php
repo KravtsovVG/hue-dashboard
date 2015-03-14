@@ -21,7 +21,9 @@ class Instructor extends BaseInstructor
     public function prepareRoutes()
     {
         $routes = [
-            new Config\Route\Home($this->_app)
+            new Config\Route\Home($this->_app),
+            new Config\Route\Users($this->_app),
+            new Config\Route\Lights($this->_app)
         ];
 
         $this->_addRoutes($routes);

@@ -9,11 +9,11 @@ use Topikito\HueDashboard\Helper\PhueConverter;
 use Topikito\HueDashboard\Plugin\HueMaster;
 
 /**
- * Class Users
+ * Class Lights
  *
  * @package Topikito\HueDashboard\Controller
  */
-class Users extends HTMLController
+class Lights extends HTMLController
 {
 
     /**
@@ -22,17 +22,17 @@ class Users extends HTMLController
     public function index()
     {
         $hueMaster = new HueMaster($this->_app);
-        $users = $hueMaster->getUsers();
+        $lights = $hueMaster->getLights();
 
-        foreach ($users as &$user) {
-            $user = PhueConverter::getUserAsArray($user);
+        foreach ($lights as &$light) {
+            $light = PhueConverter::getLightAsArray($light);
         }
 
         $parameters = [
-            'users' => $users
+            'lights' => $lights
         ];
 
-        return $this->view->render('Users/index.html.twig', $parameters);
+        return $this->view->render('Lights/index.html.twig', $parameters);
     }
 
 }

@@ -3,6 +3,7 @@
 namespace app\Config\Bridge;
 
 use app\config\Interfaces\Loadable;
+use app\Core\Helper\ConfigHelper;
 
 /**
  * Class BaseConfigLoader
@@ -101,6 +102,7 @@ class BaseConfigLoader implements Loadable
         $config['app.auto.server_folder']   = dirname(__DIR__);
 
         $this->_app['config'] = $config;
+        ConfigHelper::load($config);
         $this->_app['debug'] = !empty($this->_app['config']['app.debug.mode']) ? (bool) $this->_app['config']['app.debug.mode'] : false;
     }
 

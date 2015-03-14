@@ -7,17 +7,17 @@ use Silex\Application;
 use \Topikito\HueDashboard\Controller;
 
 /**
- * Class Users
+ * Class Lights
  *
  * @package Topikito\HueDashboard\Config\Route
  */
-class Users extends Router
+class Lights extends Router
 {
 
     public function load()
     {
-        $this->_app->get('/users/', function () {
-                $controller = new Controller\Users($this->_app);
+        $this->_app->get('/lights/', function () {
+                $controller = new Controller\Lights($this->_app);
                 return $controller->index();
             });
     }
